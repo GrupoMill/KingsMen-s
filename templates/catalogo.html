@@ -117,7 +117,7 @@
                 </div>
                 <div class="card-body flex-grow-1">
                     <h5 class="card-title">{{ produto.nome_produto }}</h5>
-                    <p class="card-text normal-price">R$ <del>80,00</del></p>
+                    <p class="card-text normal-price" style="color: greenyellow;">Frete grátis</p>
                     <p class="card-text promo-price">R$ <strong>{{ produto.preco }}</strong></p>
                     <form action="{% url 'adicionar_ao_carrinho' produto.id %}" method="POST">
                         {% csrf_token %}
