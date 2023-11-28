@@ -70,11 +70,11 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ["railway"],
-        'USER': os.environ["postgres"],
-        'PASSWORD': os.environ["ed6d3BDbF4FE25d-cEFDbEBE1-fae3gb"],
-        'HOST': os.environ["roundhouse.proxy.rlwy.net"],
-        'PORT': os.environ["38530"],
+        'NAME': os.environ["PGDATABASE"],
+        'USER': os.environ["PGUSER"],
+        'PASSWORD': os.environ["PGPASSWORD"],
+        'HOST': os.environ["PGHOST"],
+        'PORT': os.environ["PGPORT"],
     }
 }
 
